@@ -14,4 +14,4 @@ Pedidos, estoque e pontos ficam no navegador, em IndexedDB. Cada navegador mant�
 
 O GitHub Pages publica os arquivos da raiz da branch `main`. Atualizações enviadas para essa branch geram uma nova publicação. Os arquivos `index.html`, `app.js` e `demo-store.js` devem permanecer no mesmo diretório. O arquivo `.nojekyll` preserva a publicação estática.
 
-O site requer um navegador atual com JavaScript e armazenamento local habilitados. As regras de pedidos são executadas no próprio navegador; esta demonstração não integra uma operadora de pagamentos nem um servidor de pedidos reais.
+O site requer um navegador atual com JavaScript e armazenamento local habilitados. As regras de pedidos são executadas no próprio navegador. Esta demonstração não integra uma operadora de pagamentos nem um servidor de pedidos reais.

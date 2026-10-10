@@ -192,7 +192,7 @@ $('reset-demo').onclick=async()=>{
 async function start(){
   restore();
   if(lastOrder)showOrder(lastOrder);
-  else if(pendingBody)message('Pedido em conferência','A página foi recarregada durante o envio. Consulte o mesmo pedido pelo botão abaixo; a compra não será duplicada.');
+  else if(pendingBody)message('Pedido em conferência','A página foi recarregada durante o envio. Consulte o mesmo pedido pelo botão abaixo. A compra não será duplicada.');
   controls();await load();if(lastOrder)await checkOrder();
 }
 start();

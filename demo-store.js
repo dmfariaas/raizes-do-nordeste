@@ -222,7 +222,7 @@ function resolvePayment(state, id, data) {
     if (!record.request) {
       throw new RuleError('PEDIDO_ANTIGO', 'Este pedido foi criado em uma versão anterior. Recuse o pagamento pendente e inicie uma nova simulação.', 409);
     }
-    // Um pedido pendente não reserva os itens; conferimos o estoque novamente.
+    // Um pedido pendente não reserva os itens. Por isso, conferimos o estoque novamente.
     requireStock(state, record.request,
       'O estoque mudou e este pedido continua pendente. Recuse o pagamento e inicie uma nova simulação.');
     points = record.request.loyalty ? Math.floor(result.total / 100) : 0;
